@@ -1,0 +1,52 @@
+/* src/components/Dashboard.css */
+.dashboard {
+    padding: 20px;
+    background-image: url("../images/muffin.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stockOverview {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; 
+}
+
+.loading, .error, .no-products {
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+.canvas-container {
+    max-width: 900px; 
+    width: 100%; 
+    height: 500px; 
+    margin: 0 auto; 
+}
+
+
+@media only screen and (max-width: 600px) {
+    .canvas-container {
+        height: 300px; 
+    }
+
+    .loading, .error, .no-products {
+        font-size: 1rem; 
+    }
+}
+
+#dashboard {
+    padding: 20px;
+    background-image: url("../images/muffin.jpg");; 
+    background-size: cover; 
+}
